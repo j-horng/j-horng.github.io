@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Horng Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">James Horng</div>
+        <div>
+            <ul class="nav-links"> 
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#experience">Experience</a></li>
+                <li> <a href="#projects">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo"> James Horng</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li> <a href="#about" onclick="toggleMenu()">About</a></li>
+                <li> <a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li> <a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li> <a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profilePic.png" alt="James Horng profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">James Horng</h1>
+            <p class="section__text__p2">Aspiring software engineer</p>
+            <p class= "section__text__p3"> 
+                I'm currently a rising Junior at George Mason University
+                for B.S in computer science. 
+                I'm also enrolled in the BAM program, 
+                where I will be working towards a M.S in computer science when I graduate with my B.S.
+            </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">
+                    My Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h1 class="title"> Work Experience</h1>
+        <div class="section-container">
+            <div class="experience-timeline">
+                <p>
+                    Currently none, but I am seeking internship opportunities!
+                </p>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'">
+    </section>
+
+    <section id="projects">
+       <h1 class="title">Projects</h1>
+       <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/pokemonImg1.png" 
+                    alt="Project 1"
+                    class="project-img1">        
+                </div>
+                <h2 class="experience-sub-title project-title">Daily Pokemon App</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https:/github.com/j-horng'">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/website.png" 
+                    alt="Project 2"
+                    class="project-img2">
+                </div>
+                <h2 class="experience-sub-title project-title">Personal Portfolio Website</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https:/github.com/j-horng'">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+           </div> 
+        </div>
+       </div> 
+
+    </section>
+
+    <section id="contact">
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/email.png" 
+                alt="email icon"
+                class="icon contact-icon">
+                <p><a href="mailto:jameshorng@gmail.com">jameshorng@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="LinkedIn icon"
+                class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/james-horng-5b86aa216/">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/github.png" 
+                alt="GitHub icon"
+                class="icon contact-icon">
+                <p><a href="https:/github.com/j-horng">GitHub</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links"> 
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#experience">Experience</a></li>
+                    <li> <a href="#projects">Projects</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Built with 
+            <img src="./assets/htmlIcon.png" alt="code-icon" class="icon">
+            <img src="./assets/cssIcon.png" alt="code-icon" class="icon">
+            <img src="./assets/javascriptIcon.png" alt="code-icon" class="icon">
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
